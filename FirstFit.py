@@ -9,7 +9,7 @@ class FirstFitMemoryAllocation:
         self.allocation = [-1] * len(processes)  # store block allocation for each process
 
     def allocate_memory(self):
-        """Simulate the First Fit memory allocation"""
+        """Simulate the First Fit memory allocation."""
         for i in range(len(self.processes)):
             for j in range(len(self.blocks)):
                 if self.blocks[j] >= self.processes[i]:  # Check if block fits
@@ -62,7 +62,7 @@ class MemoryAllocationApp:
             messagebox.showerror("Error", "Invalid input. Please enter numbers separated by commas.")
 
     def display_results(self, blocks, processes, allocation):
-        """Display the allocation results in a new window"""
+        """Display the allocation results in a new window."""
         result_window = tk.Toplevel(self.master)
         result_window.title("Allocation Results")
 
